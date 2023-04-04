@@ -65,6 +65,7 @@ function App() {
               onClick={() => {
                 playSound(drumPad.text);
               }}
+              key={drumPad.src}
               className="drum-pad"
               id="{drumPad.text}"
             >
