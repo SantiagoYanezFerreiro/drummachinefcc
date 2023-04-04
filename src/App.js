@@ -52,11 +52,17 @@ function App() {
     <div className="App">
       <div id="drum-machine">
         <div id="display">
-          {drumPads.map((drumPad) => (
-            <div className="drum-pad" key={drumPad.keyCode} id="{drumPad.text}">
-              {drumPad.text}
-            </div>
-          ))}
+          <div className="drum-pads">
+            {drumPads.map((drumPad) => (
+              <div
+                className="drum-pad"
+                key={drumPad.keyCode}
+                id="{drumPad.text}"
+              >
+                {drumPad.text}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
